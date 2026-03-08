@@ -79,9 +79,10 @@ build/
 !OPEN_SOURCE_CHECKLIST.md
 !.gitignore
 
-# Skills 目录保留符号链接
-skills/
+# Skills 目录：保留 README，忽略其他
+skills/*
+!skills/README.md
 
-# 但忽略 skill 内部的临时文件
-skills/*/.cache/
-skills/*/*.log
+# 忽略 skill 内部的临时文件
+# skills/*/.cache/
+# skills/*/*.log
