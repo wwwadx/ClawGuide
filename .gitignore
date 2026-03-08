@@ -41,10 +41,10 @@ temp/
 memory/*.md
 !memory/.gitkeep
 
-# 用户特定文件
-USER.md
-IDENTITY.md
-# 如果想分享这些，删除上面的行
+# 用户特定文件 - 模板版本已包含，用户可以自定义
+# USER.md     - 包含模板（可以提交）
+# IDENTITY.md - 包含模板（可以提交）
+# 如果用户自定义后想排除，可以在本地 .gitignore 中添加
 
 # Node modules（如果有本地安装的 skills）
 node_modules/
