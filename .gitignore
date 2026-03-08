@@ -1,0 +1,87 @@
+# OpenClaw Workspace Git Ignore
+# 保护敏感信息和临时文件
+
+# 敏感配置
+*.key
+*.pem
+openclaw.json
+.env
+.env.local
+.env.*.local
+
+# API Keys 和凭证
+credentials/
+secrets/
+.keys/
+*.token
+
+# 日志
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 临时文件
+tmp/
+temp/
+*.tmp
+*.swp
+*.swo
+*~
+
+# 编辑器
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+
+# Memory 文件（可能包含个人信息）
+memory/*.md
+!memory/.gitkeep
+
+# 用户特定文件
+USER.md
+IDENTITY.md
+# 如果想分享这些，删除上面的行
+
+# Node modules（如果有本地安装的 skills）
+node_modules/
+
+# 技能特定的忽略
+skills/*/node_modules/
+skills/*/.env
+skills/*/config/local.*
+
+# 测试和构建
+coverage/
+dist/
+build/
+*.tgz
+
+# OpenClaw 特定
+.openclaw/
+.openclaw.lock
+.gateway.sock
+
+# 但保留重要的模板文件
+!AGENTS.md
+!SOUL.md
+!TOOLS.md
+!HEARTBEAT.md
+!README.md
+!SCENARIOS_QUICK_REF.md
+!TUTORIALS.md
+!ONBOARDING.md
+!TUTORIAL_TEMPLATE.md
+!USE_CASE_COLLECTION.md
+!OPEN_SOURCE_CHECKLIST.md
+!.gitignore
+
+# Skills 目录保留符号链接
+skills/
+
+# 但忽略 skill 内部的临时文件
+skills/*/.cache/
+skills/*/*.log
